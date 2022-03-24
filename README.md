@@ -29,8 +29,8 @@ aws iam list-attached-role-policies --role-name example-role
 
 - refer to the below link to generate iam policies for your services
 
-[! aws generate polices](https://awspolicygen.s3.amazonaws.com/policygen.html)
+[!aws generate polices](https://awspolicygen.s3.amazonaws.com/policygen.html)
 
 - refer to the below commands to see the available cli commands
 
-[! cli commands](https://docs.aws.amazon.com/cli/latest/reference/kms/)
+[!cli commands](https://docs.aws.amazon.com/cli/latest/reference/kms/)
