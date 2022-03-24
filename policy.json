@@ -1,0 +1,20 @@
+{
+    "Id":"Create policies for ec2",
+    "Version":"2012-10-17",
+    "Statement":[
+        {
+            "Effect":"",
+            "Action":"",
+            "Principal":"",
+            "Resource":""
+        },
+        {
+            "Effect":"",
+            "Action":[
+
+            ],
+            "Principal":"",
+            "Resource":""
+        }
+    ]
+}
