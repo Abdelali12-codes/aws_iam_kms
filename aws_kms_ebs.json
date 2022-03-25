@@ -1,0 +1,32 @@
+{
+    "Sid": "Allow use of the key",
+    "Effect": "Allow",
+    "Principal": {
+      "AWS": [
+      "arn:aws:iam::111122223333:user/KeyUser",
+      "arn:aws:iam::444455556666:root"
+    ]},
+    "Action": [
+      "kms:Encrypt",
+      "kms:Decrypt",
+      "kms:ReEncrypt*",
+      "kms:GenerateDataKey*",
+      "kms:DescribeKey"
+    ],
+    "Resource": "*"
+  },
+  {
+    "Sid": "Allow attachment of persistent resources",
+    "Effect": "Allow",
+    "Principal": {"AWS": [
+      "arn:aws:iam::111122223333:user/KeyUser",
+      "arn:aws:iam::444455556666:root"
+    ]},
+    "Action": [
+      "kms:CreateGrant",
+      "kms:ListGrants",
+      "kms:RevokeGrant"
+    ],
+    "Resource": "*",
+    "Condition": {"Bool": {"kms:GrantIsForAWSResource": true}}
+}    
